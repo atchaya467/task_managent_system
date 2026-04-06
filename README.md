@@ -1,6 +1,4 @@
-# Task Management System - Xplore Intellects Pvt Ltd
-
-This is a full-stack **Admin & Employee Task Management System** requested for the **Xplore Intellects Pvt Ltd** company evaluation.
+# Task Management System 
 
 ## Technology Stack & Database
 - **Frontend**: React.js, Vite, and custom CSS for dynamic animations.
