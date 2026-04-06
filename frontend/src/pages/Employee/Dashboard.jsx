@@ -116,7 +116,7 @@ const EmployeeDashboard = () => {
                       </span>
                     </td>
                     <td style={{ color: new Date(task.dueDate) < new Date() && task.status !== 'Completed' ? 'var(--danger)' : 'inherit' }}>
-                      {task.dueDate ? new Date(task.dueDate).toLocaleDateString() : 'No deadline'}
+                      {task.dueDate ? new Date(task.dueDate).toLocaleString() : 'No deadline'}
                     </td>
                     <td>
                       <div style={{ display: 'flex', gap: '10px' }}>

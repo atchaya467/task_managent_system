@@ -251,7 +251,7 @@ const AdminDashboard = () => {
                         </span>
                       </td>
                       <td style={{ color: new Date(task.dueDate) < new Date() && task.status !== 'Completed' ? 'var(--danger)' : 'inherit' }}>
-                        {task.dueDate ? new Date(task.dueDate).toLocaleDateString() : 'No deadline'}
+                        {task.dueDate ? new Date(task.dueDate).toLocaleString() : 'No deadline'}
                       </td>
                     </tr>
                   ))}
@@ -285,8 +285,8 @@ const AdminDashboard = () => {
                   </select>
                 </div>
                 <div className="form-group">
-                  <label className="form-label">Deadline / Due Date</label>
-                  <input type="date" className="form-input" value={newTaskDeadline} onChange={(e) => setNewTaskDeadline(e.target.value)} required style={newTaskDeadline ? {} : { color: 'var(--text-secondary)' }} />
+                  <label className="form-label">Deadline / Due Date (with Time)</label>
+                  <input type="datetime-local" className="form-input" value={newTaskDeadline} onChange={(e) => setNewTaskDeadline(e.target.value)} required style={newTaskDeadline ? {} : { color: 'var(--text-secondary)' }} />
                 </div>
                 <button type="submit" className="btn-primary" style={{ animation: 'none', display: 'flex', alignItems: 'center', gap: '10px' }} disabled={isSubmitting}>
                   {isSubmitting ? <span className="loader"></span> : 'Draft and Assign Task'}
