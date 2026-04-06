@@ -1,4 +1,6 @@
-# Task Management System 
+# Task Management System
+
+A polished full-stack **Admin & Employee Task Management System** built with modern web technologies.
 
 ## Technology Stack & Database
 - **Frontend**: React.js, Vite, and custom CSS for dynamic animations.
@@ -50,7 +52,7 @@ This application natively connects to MongoDB. By default, it looks for a local 
 
 ## Features Added
 - **Password Visibility Toggles**: Click the "Eye" icon in any of the Login or Registration forms to peek at the password.
-- **Dynamic Dark Theme & Animations**: Custom landing page designed specifically for this company project.
+- **Dynamic Dark Theme & Animations**: Custom landing page with modern styling and smooth transitions.
 - **Admin and Employee Separation**: Role-based access control built-in using JWT authentication.
 
 ## Default Credentials
